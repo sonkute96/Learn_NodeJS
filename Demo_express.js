@@ -1,6 +1,6 @@
 
 
-var express = require ("./module_express/getModuleExpress.js");
+var express = require ('express');
 
 
 var app = express();
@@ -13,7 +13,7 @@ server.listen(3000);
 app.get("/admin", function(req,res){
   //res.send("hello world");
 
-  res.sendFile( __dirname + "/chuoi.txt");
+  res.send("hello");
 });
 
 
